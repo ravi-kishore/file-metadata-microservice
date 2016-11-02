@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>File Metada Microservice</title>
+</head>
+<body>
+	<p>Submit a file to view its filesize.</p>
+	<p>Not storing the file in the server storage. Calculating the size from the memory itself.</p>
+	<form action="/calculateSize" method="post" enctype="multipart/form-data">
+		<input type="file" name="file" accept="*/*">
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
